@@ -1,0 +1,71 @@
+{
+    "name": "Hashicorp Tools",
+    "id": "hashicorp-tools",
+    "version": "0.2.0",
+    "description": "Installs Hashicorp Products",
+    "options": {
+        "vault": {
+            "type": "string",
+            "proposals": [
+                "1.17.5",
+                "1.16.3",
+                "1.15.6"
+            ],
+            "default": "",
+            "description": "Vault version"
+        },
+        "terraform": {
+            "type": "string",
+            "proposals": [
+                "1.9.5",
+                "1.8.5",
+                "1.7.5"
+            ],
+            "default": "",
+            "description": "Terraform version"
+        },
+        "consul": {
+            "type": "string",
+            "proposals": [
+                "1.19.2",
+                "1.18.2",
+                "1.17.3"
+            ],
+            "default": "",
+            "description": "Consul version"
+        },
+        "vagrant": {
+            "type": "string",
+            "proposals": [
+                "2.4.1",
+                "2.3.7",
+                "2.2.19"
+            ],
+            "default": "",
+            "description": "Vagrant version"
+        },
+        "nomad": {
+            "type": "string",
+            "proposals": [
+                "1.8.3",
+                "1.7.7",
+                "1.6.10"
+            ],
+            "default": "",
+            "description": "Nomad version"
+        },
+        "packer": {
+            "type": "string",
+            "proposals": [
+                "1.11.2",
+                "1.10.3",
+                "1.9.5"
+            ],
+            "default": "",
+            "description": "Packer version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
