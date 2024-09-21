@@ -7,7 +7,10 @@ Installs Hashicorp Products
 
 ```json
 "features": {
-    "ghcr.io/vmvarela/devcontainer-features/hashicorp-tools:0": {}
+    "ghcr.io/vmvarela/devcontainer-features/hashicorp-tools:0": {
+        "terraform": "1.9.5",
+        "vault": "1.17.5"
+    }
 }
 ```
 
