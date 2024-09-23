@@ -7,7 +7,7 @@ Repository with features to use in devcontainers:
 
 To use the features from this repository, add the desired features to `devcontainer.json`. To use the features from this repository, add the ones you need to `devcontainer.json`.
 
-Este ejemplo instala Terraform y Vault en un devcontainer usando la feature [hashicorp-tools](./src/hashicorp-tools/README.md).
+This sample installs Terraform and Vault into a devcontainer using [hashicorp-tools](./src/hashicorp-tools/README.md) feature.
 
 ```jsonc
 {
