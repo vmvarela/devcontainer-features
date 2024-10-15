@@ -1,0 +1,18 @@
+{
+    "ubuntu": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "tflint": {
+                "version": "latest"
+            }
+        }
+    },
+    "alpine": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "tflint": {
+                "version": "0.53.0"
+            }
+        }
+    }
+}

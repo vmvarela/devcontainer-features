@@ -2,6 +2,8 @@
 
 Repository with features to use in devcontainers:
 - [hashicorp-tools](./src/hashicorp-tools/README.md): Installs Hashicorp utilities (Terraform, Vault, Consul...)
+- [terraform-docs](./src/terraform-docs/README.md): Instala terraform-docs
+- [tflint](./src/tflint/README.md): Instala TFLint
 
 ## Usage
 

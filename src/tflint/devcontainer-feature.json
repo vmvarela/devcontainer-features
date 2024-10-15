@@ -1,0 +1,21 @@
+{
+    "name": "TFLint",
+    "id": "tflint",
+    "version": "0.1.0",
+    "description": "Installs TFLint",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "0.53.0",
+                "0.52.0"
+            ],
+            "default": "latest",
+            "description": "TFLint version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

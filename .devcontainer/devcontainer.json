@@ -18,7 +18,11 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/vmvarela/devcontainer-features/hashicorp-tools:0": {
+            "terraform": "1.9.5",
+            "vault": "1.17.5"
+        }
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
