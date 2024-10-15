@@ -16,6 +16,8 @@ jobs:
       matrix:
         features:
           - hashicorp-tools
+          - terraform-docs
+          - tflint
     steps:
       - uses: actions/checkout@v4
 

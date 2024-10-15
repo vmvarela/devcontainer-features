@@ -1,0 +1,21 @@
+{
+    "name": "Terraform Docs",
+    "id": "terraform-docs",
+    "version": "0.1.0",
+    "description": "Installs Terraform Docs",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "0.19.0",
+                "0.18.0"
+            ],
+            "default": "latest",
+            "description": "Terraform docs version"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
