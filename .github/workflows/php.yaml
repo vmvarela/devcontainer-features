@@ -1,0 +1,17 @@
+name: test php
+
+on:
+  push:
+
+jobs:
+  runs-on: ubuntu-latest
+  container: php:8.3-cli-alpine
+  steps:
+    - uses: actions/checkout@v4
+    - name: phpinfo
+      shell: php
+      run: |
+          <?php
+          phpinfo();
+          ?>
+
