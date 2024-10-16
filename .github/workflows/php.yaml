@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: phpinfo
-        shell: php
+        shell: php {0}
         run: |
             <?php
             phpinfo();
