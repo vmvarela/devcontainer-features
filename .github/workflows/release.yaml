@@ -1,6 +1,7 @@
 name: "Release dev container features & Generate Documentation"
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
+  push:
 
 jobs:
   deploy:
@@ -13,13 +14,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: docker/setup-buildx-action@v3
+      - uses: prisamedia/devops-actions/vault@main
+        with:
+          team: devops
+          password: ${{ secrets.VAULT_PW_DEVOPS }}
+      - uses: docker/login-action@v3
+        with:
+          registry: nexus.prisamedia.com:8444
+          username: ${{ env.NEXUS_USERNAME }}
+          password: ${{ env.NEXUS_PASSWORD }}
+
       - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
-          
+          oci-registry: "nexus.prisamedia.com:8444"
+          features-namespace: "devops/devcontainers-features"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

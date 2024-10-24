@@ -1,4 +1,4 @@
-name: test php
+name: test terraform
 
 on:
   push:
